@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f4ff;
+  color: #222;
+  text-align: center;
+  padding: 20px;
+}
+
+header {
+  margin-bottom: 20px;
+}
+
+h1 {
+  color: #0004ff;
+}
+
+.pantalla {
+  display: none;
+}
+
+.pantalla.activa {
+  display: block;
+}
+
+button {
+  background-color: #3c00ffe0;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  font-size: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #0011ff;
+}
+
+.marcador {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.cartas {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.carta {
+  width: 300px;
+  height: 300px;
+  background-color: white;
+  border: 4px solid #0011ff;
+  border-radius: 50%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+  padding: 35px;
+}
+
+.simbolo {
+  font-size: 52px;
+  cursor: pointer;
+}
+
+.simbolo:hover {
+  transform: scale(1.2);
+}
+
+#mensaje {
+  font-size: 30px;
+  margin-top: 25px;
+  min-height: 25px;
+}
+
+@media (max-width: 700px) {
+  .carta {
+    width: 260px;
+    height: 260px;
+    padding: 30px;
+  }
+
+  .simbolo {
+    font-size: 50px;
+  }
+header {
+  margin-top: 200px; /* Aumenta este número si lo quieres aún más abajo */
+  margin-bottom: 100px;
+}
