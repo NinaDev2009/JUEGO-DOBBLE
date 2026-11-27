@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dobble Web</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+  <header>
+    <h1>Dobble Web</h1>
+    <p>Pulsa el símbolo que se repite en las dos cartas</p>
+  </header>
+
+  <main>
+    <section id="pantalla-inicio" class="pantalla activa">
+      <h2>¿Estás preparado?</h2>
+      <button id="boton-jugar">Jugar</button>
+    </section>
+
+    <section id="pantalla-juego" class="pantalla">
+      <div class="marcador">
+        <p>Puntos: <span id="puntos">0</span></p>
+        <p>Tiempo: <span id="tiempo">60</span> s</p>
+      </div>
+
+      <div class="cartas">
+        <div id="carta-1" class="carta"></div>
+        <div id="carta-2" class="carta"></div>
+      </div>
+
+      <p id="mensaje"></p>
+
+      <button id="boton-reiniciar">Reiniciar</button>
+    </section>
+
+    <section id="pantalla-final" class="pantalla">
+      <h2>¡Se acabó el tiempo!</h2>
+      <p>Tu puntuación final es: <span id="puntuacion-final">0</span></p>
+      <button id="boton-volver">Jugar otra vez</button>
+    </section>
+  </main>
+
+  <script src="juego.js"></script>
+</body>
+</html>
